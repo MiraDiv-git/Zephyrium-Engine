@@ -1,0 +1,2 @@
+[workspace]
+members = ["ECS", "Input", "Physics", "Render"]
