@@ -3,6 +3,10 @@ const std = @import("std");
 pub fn build(b: *std.Build) void {
     const target_name = b.option([]const u8, "target", "Target OS (windows, linux, macos)") orelse "host";
 
+    //////////////////////////////////
+    // Cross-Platform build options //
+    //////////////////////////////////
+
     const target = if (std.mem.eql(u8, target_name, "host"))
         b.graph.host
     else if (std.mem.eql(u8, target_name, "windows"))
@@ -16,7 +20,10 @@ pub fn build(b: *std.Build) void {
         return;
     };
 
-    // Создаем модуль с указанием target
+    ////////////////////////
+    // Executable options //
+    ////////////////////////
+
     const root_module = b.createModule(.{
         .root_source_file = b.path("src/main.zig"),
         .target = target,

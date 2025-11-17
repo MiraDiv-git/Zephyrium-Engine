@@ -1,2 +1,8 @@
 [workspace]
-members = ["ECS", "Input", "Physics", "Render"]
+members = [
+    "ECS",
+    "Input",
+    "Physics",
+    "Render"
+]
+resolver = "3"

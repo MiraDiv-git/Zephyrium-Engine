@@ -1,4 +1,5 @@
-pub fn main()
+#[unsafe(no_mangle)]
+pub extern "C" fn test_call()
 {
     println!("Physics Module Initialized");
 }
