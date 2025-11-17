@@ -5,4 +5,9 @@ set /p MESSAGE="Commit message: "
 
 git add .
 git commit -m "%MESSAGE%"
-git push -u origin main
+
+set /p CONF="Continue? (y/n): "
+if /i "%OS%"=="y" (
+    git push -u origin main
+
+pause

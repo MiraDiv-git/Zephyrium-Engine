@@ -1,3 +1,4 @@
 Modules/.idea/
+Modules/target/
 Core/.zig-cache/
 Bin/
