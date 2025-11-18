@@ -1,5 +1,6 @@
 # Zephyrium Engine
-... is a modular game engine built around a lightweight core written in C, with modules in Rust and game logic in Lua. The editor is built with Qt 6 and C++, development tools use Python, and the core API is written in C. Because the core, every module, and the editor are separate libraries, we call it a "Microkernel Engine."
+... is a modular game engine built around a lightweight core written in C, with modules in Rust and game logic in Lua. The editor is built with Qt 6 and C++, development tools use Python, and the core API is written in C. <br>
+Because the core, every module, and the editor are separate libraries, we call it a "Microkernel Engine."
 # Dependencies
 - **[Rust v1.91.1](https://rustup.rs/)** *or higher* - For Modules
 - **[Meson build system](https://github.com/mesonbuild/meson/releases)** - For Core and API
