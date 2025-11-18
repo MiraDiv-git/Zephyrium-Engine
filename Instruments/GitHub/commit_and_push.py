@@ -1,5 +1,7 @@
 import os
 
+os.chdir("../../")
+
 msg = input("Commit message: ")
 
 os.system("git add .")
